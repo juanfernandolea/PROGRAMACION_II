@@ -28,5 +28,56 @@ Git
 21. Modificadores de acceso: public (visible en todas partes), private (solo dentro de la clase), protected (visible en el mismo paquete y subclases).
 22. Una variable de entorno es un valor que el sistema guarda para configurar programas, como la ruta de Java.
 
-#CALCULADORA
-#CONTADOR DE CONSONANTES Y VOCALES 
+
+#CALCULADORA Y CONTADOR
+1. Calculadora
+import java.util.Scanner;
+public class Calculadora {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Ingrese dos números:");
+    double a = sc.nextDouble();
+    double b = sc.nextDouble();
+    System.out.println("Elija operación (+, -, *, /):");
+    char op = sc.next().charAt(0);
+    double r = 0;
+    switch(op) {
+      case '+': r = a+b; break;
+      case '-': r = a-b; break;
+      case '*': r = a*b; break;
+      case '/': r = a/b; break;
+    }
+    System.out.println("Resultado: " + r);
+  }
+}
+
+2. Contar vocales y consonantes:
+
+import java.util.Scanner;
+public class Contador {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Ingrese una palabra:");
+    String palabra = sc.next();
+    int vocales = 0, consonantes = 0;
+    for(char c : palabra.toCharArray()) {
+      if("aeiou".indexOf(c) != -1) vocales++;
+      else consonantes++;
+    }
+    System.out.println("Vocales: " + vocales);
+    System.out.println("Consonantes: " + consonantes);
+  }
+}
+
+3. Invertir una cadena:
+
+import java.util.Scanner;
+public class Invertir {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Ingrese un texto:");
+    String texto = sc.nextLine();
+    String invertido = new StringBuilder(texto).reverse().toString();
+    System.out.println("Invertido: " + invertido);
+  }
+}
