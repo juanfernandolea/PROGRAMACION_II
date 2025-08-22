@@ -27,3 +27,6 @@ Git
 20. Herencia es cuando una clase puede heredar atributos y métodos de otra. En Java se usa con extends.
 21. Modificadores de acceso: public (visible en todas partes), private (solo dentro de la clase), protected (visible en el mismo paquete y subclases).
 22. Una variable de entorno es un valor que el sistema guarda para configurar programas, como la ruta de Java.
+
+#CALCULADORA
+#CONTADOR DE CONSONANTES Y VOCALES 
