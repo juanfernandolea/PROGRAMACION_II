@@ -29,7 +29,7 @@ Git
 22. Una variable de entorno es un valor que el sistema guarda para configurar programas, como la ruta de Java.
 
 
-##CALCULADORA Y CONTADOR
+## CALCULADORA Y CONTADOR
 1. Calculadora
 import java.util.Scanner;
 public class Calculadora {
